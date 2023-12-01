@@ -1,16 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_complete_project/core/routing/app_router.dart';
+import 'package:flutter_complete_project/core/theming/colors.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'core/routing/app_router.dart';
 import 'core/routing/routes.dart';
-import 'core/theming/colors.dart';
 
 class DocApp extends StatelessWidget {
   final AppRouter appRouter;
-  const DocApp({
-    super.key,
-    required this.appRouter,
-  });
+  const DocApp({super.key, required this.appRouter});
 
   @override
   Widget build(BuildContext context) {
@@ -18,6 +15,7 @@ class DocApp extends StatelessWidget {
       designSize: const Size(375, 812),
       minTextAdapt: true,
       child: MaterialApp(
+        title: 'Doc App',
         theme: ThemeData(
           primaryColor: ColorsManager.mainBlue,
           scaffoldBackgroundColor: Colors.white,
@@ -25,7 +23,7 @@ class DocApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         initialRoute: Routes.onBoardingScreen,
         onGenerateRoute: appRouter.generateRoute,
-      ),
+      )
     );
   }
 }

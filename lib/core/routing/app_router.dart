@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../../features/login/ui/login_screen.dart';
-import '../../features/onboarding/onboarding_screen.dart';
-import 'routes.dart';
+import 'package:flutter_complete_project/core/routing/routes.dart';
+import 'package:flutter_complete_project/features/login/ui/login_screen.dart';
+import 'package:flutter_complete_project/features/onboarding/onboarding_screen.dart';
 
 class AppRouter {
   Route generateRoute(RouteSettings settings) {
@@ -19,11 +19,9 @@ class AppRouter {
         );
       default:
         return MaterialPageRoute(
-          builder: (context) => Scaffold(
-            body: SafeArea(
-              child: Center(
-                child: Text('No route defined for ${settings.name}'),
-              ),
+          builder: (_) => Scaffold(
+            body: Center(
+              child: Text('No route defined for ${settings.name}'),
             ),
           ),
         );

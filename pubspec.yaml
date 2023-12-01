@@ -55,18 +55,10 @@ dependencies:
   easy_localization: ^3.0.3
   # for splash screen
   flutter_native_splash: ^2.3.5
-  # An SVG rendering and widget library for Flutter, which allows painting
+  # An SVG rendering and widget library for Flutter, which allows painting 
   flutter_svg: ^2.0.9
   # for adapting screen and font size.
   flutter_screenutil: ^5.9.0
-
-
-
-
-
-
-
-
 
 dev_dependencies:
   flutter_test:
@@ -94,6 +86,10 @@ flutter:
   assets:
     - assets/images/
     - assets/svgs/
+<<<<<<< HEAD
+=======
+  #   - images/a_dot_ham.jpeg
+>>>>>>> origin/development
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

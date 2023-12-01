@@ -10,9 +10,7 @@ class DoctorImageAndText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        SvgPicture.asset(
-          'assets/svgs/docdoc_logo_low_opacity.svg',
-        ),
+        SvgPicture.asset('assets/svgs/docdoc_logo_low_opacity.svg'),
         Container(
           foregroundDecoration: BoxDecoration(
             gradient: LinearGradient(
@@ -25,9 +23,7 @@ class DoctorImageAndText extends StatelessWidget {
               stops: const [0.14, 0.4],
             ),
           ),
-          child: Image.asset(
-            'assets/images/onboarding_doctor.png',
-          ),
+          child: Image.asset('assets/images/onboarding_doctor.png'),
         ),
         Positioned(
           bottom: 30,
@@ -39,7 +35,6 @@ class DoctorImageAndText extends StatelessWidget {
             style: TextStyles.font32BlueBold.copyWith(
               height: 1.4,
             ),
-            overflow: TextOverflow.ellipsis,
           ),
         ),
       ],
