@@ -6,5 +6,5 @@ SizedBox verticalSpace(double height) => SizedBox(
     );
 
 SizedBox horizontalSpace(double width) => SizedBox(
-      height: width.w,
+      width: width.w,
     );
