@@ -128,6 +128,9 @@ class _SignupFormState extends State<SignupForm> {
             validator: (value) {
               if (value == null || value.isEmpty) {
                 return 'Please enter a valid password';
+              } else if (value !=
+                  context.read<RegisterCubit>().passwordController.text) {
+                return 'Passwords do not match';
               }
             },
           ),
