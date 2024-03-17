@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - master
-  pull_request:
-    branches:
-      - master
 
 jobs:
   distribute:
@@ -28,38 +25,11 @@ jobs:
     - name: Install Fastlane
       run: |
         sudo gem install fastlane
+      working-directory: android
         
     - name: Build and Distribute App
       env:
         FIREBASE_CLI_TOKEN: ${{ secrets.FIREBASE_CLI_TOKEN }}
       run: |
         fastlane android firebase_distribution
-
-
-# on:
-#   push:
-#     branches:
-#       - master
-#   pull_request:
-#     branches:
-#       - master
-
-# jobs:
-#   build:
-#     runs-on: ubuntu-latest
-#     steps:
-#     - uses: actions/checkout@v2
-#     - uses: actions/setup-java@v2
-#       with:
-#         java-version: '11'
-#         distribution: 'adopt'
-#     - uses: subosito/flutter-action@v2
-#       with:
-#         channel: master
-#     - run: flutter pub get
-#     - run: sudo gem install fastlane
-#     - name: Build and Test
-#       run: |
-#         cd android
-#         fastlane build
 
