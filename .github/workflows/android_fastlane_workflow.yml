@@ -21,6 +21,14 @@ jobs:
       uses: subosito/flutter-action@v2
       with:
         channel: stable
+
+    # Setup Ruby, Bundler, and Gemfile dependencies for Fastlane
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: "2.7.2"
+        bundler-cache: true
+        working-directory: android
     
     - name: Install Fastlane
       run: |
@@ -32,4 +40,6 @@ jobs:
         FIREBASE_CLI_TOKEN: ${{ secrets.FIREBASE_CLI_TOKEN }}
       run: |
         fastlane android firebase_distribution
+      working-directory: android
+
 
