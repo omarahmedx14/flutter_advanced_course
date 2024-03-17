@@ -1,6 +1,9 @@
 
 default_platform(:android)
 
+# To run the lane, execute the following command:
+# bundle exec fastlane firebase_distribution
+
 platform :android do
   desc "Lane for Android Firebase App Distribution"
   lane :firebase_distribution do
