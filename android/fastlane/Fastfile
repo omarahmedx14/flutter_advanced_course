@@ -15,7 +15,7 @@ platform :android do
         android_artifact_type: "APK",
         android_artifact_path: "../build/app/outputs/flutter-apk/app-production-release.apk",
         testers: "lostuwk@gmail.com",
-        release_notes: "First Fastlane Firebase Distribution YouTube Video!"
+        release_notes: "Final touch for fastlane with GitHub Actions."
   )
   end
 end

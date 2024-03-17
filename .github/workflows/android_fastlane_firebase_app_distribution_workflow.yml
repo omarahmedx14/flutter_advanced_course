@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  distribute:
+  distribute_to_firebase:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -22,12 +22,12 @@ jobs:
       with:
         channel: stable
 
-    # - name: Setup Ruby
-    #   uses: ruby/setup-ruby@v1
-    #   with:
-    #     ruby-version: "3.2.3"
-    #     bundler-cache: true
-    #     working-directory: android
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: "3.2.3"
+        bundler-cache: true
+        working-directory: android
         
     - name: Build and Distribute App
       env:
