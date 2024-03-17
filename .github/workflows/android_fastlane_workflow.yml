@@ -20,7 +20,7 @@ jobs:
     - name: Install Flutter
       uses: subosito/flutter-action@v2
       with:
-        channel: master
+        channel: stable
 
     # Setup Ruby, Bundler, and Gemfile dependencies for Fastlane
     - name: Setup Ruby
