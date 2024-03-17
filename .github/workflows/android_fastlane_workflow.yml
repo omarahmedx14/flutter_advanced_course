@@ -32,8 +32,7 @@ jobs:
     
     - name: Install Fastlane
       run: |
-        sudo gem install fastlane
-      working-directory: android
+        gem install fastlane
         
     - name: Build and Distribute App
       env:
