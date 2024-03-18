@@ -3,10 +3,18 @@ default_platform(:android)
 
 # To run the lane, execute the following command:
 # bundle exec fastlane firebase_distribution
+desc "increment version code for android build"
+lane :increment_version do
+  latest_release = firebase_app_distribution_get_latest_release(
+    app: "1:924796587829:android:e40fd6720ac651a640867c"
+  )
+  increment_version_code({ version_code: latest_release[:buildVersion].to_i + 1 })
+end
 
 platform :android do
   desc "Lane for Android Firebase App Distribution"
   lane :firebase_distribution do
+    increment_version
     sh "flutter clean"
     sh "flutter build apk --release --flavor production --target lib/main_production.dart --no-tree-shake-icons"
     firebase_app_distribution(
