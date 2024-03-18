@@ -537,6 +537,12 @@ packages:
     dependency: transitive
     description:
       name: meta
+<<<<<<< HEAD
+      sha256: a6e590c838b18133bb482a2745ad77c5bb7715fb0451209e1a7567d416678b8e
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.10.0"
+=======
       sha256: d584fa6707a52763a52446f02cc621b077888fb63b93bbcb1143a7be5a0c0c04
       url: "https://pub.dev"
     source: hosted
@@ -549,6 +555,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.5"
+>>>>>>> 74e219fc0fedee1186d361b2cf08361a8228e6f1
   nested:
     dependency: transitive
     description:
@@ -818,6 +825,8 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.2"
+<<<<<<< HEAD
+=======
   stream_transform:
     dependency: transitive
     description:
@@ -826,6 +835,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.0"
+>>>>>>> 74e219fc0fedee1186d361b2cf08361a8228e6f1
   string_scanner:
     dependency: transitive
     description:
@@ -850,6 +860,8 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.6.1"
+<<<<<<< HEAD
+=======
   timing:
     dependency: transitive
     description:
@@ -858,6 +870,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.1"
+>>>>>>> 74e219fc0fedee1186d361b2cf08361a8228e6f1
   tuple:
     dependency: transitive
     description:
@@ -938,6 +951,8 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.3.0"
+<<<<<<< HEAD
+=======
   web_socket_channel:
     dependency: transitive
     description:
@@ -946,6 +961,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.4.0"
+>>>>>>> 74e219fc0fedee1186d361b2cf08361a8228e6f1
   win32:
     dependency: transitive
     description:
@@ -979,5 +995,10 @@ packages:
     source: hosted
     version: "3.1.2"
 sdks:
+<<<<<<< HEAD
+  dart: ">=3.2.0-194.0.dev <4.0.0"
+  flutter: ">=3.7.0"
+=======
   dart: ">=3.2.0 <4.0.0"
   flutter: ">=3.16.0"
+>>>>>>> 74e219fc0fedee1186d361b2cf08361a8228e6f1
